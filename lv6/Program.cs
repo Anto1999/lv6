@@ -22,6 +22,16 @@ namespace lv6
             }
             notebook.RemoveNote(noteforremoval);
 
+
+             var date = new DateTime(2020, 5, 20, 19, 21, 10);
+
+            ToDoItem item = new ToDoItem("Anto", "zadatak3", date);
+            CareTaker careTaker = new CareTaker();
+            careTaker.PushStack(item.StoreState());
+            item.Rename("Ivic");
+            item.ChangeTask("hehehe");
+            item.RestoreState(careTaker.PopStack());
+
         }
     }
 }
