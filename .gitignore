@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/lv6/Memento.cs
+/lv6/ToDoItem.cs
